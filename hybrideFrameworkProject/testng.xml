@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Suite">
+  <test thread-count="5" parallel="classes" name="login page test">
+    <classes>
+      <class name="com.runner.LoginPageTest"/>
+      </classes>
+  </test>
+      <test thread-count="5" parallel="classes" name="cart page test">
+    <classes>
+      <class name="com.runner.CartcheckTest"/>
+      </classes>
+  </test>
+      <test thread-count="5" parallel="classes" name="search page test">
+    <classes>
+      <class name="com.runner.SearchPageTest"/>
+      </classes>
+  </test>
+      <test thread-count="5" parallel="classes" name="order page test">
+    <classes>
+      <class name="com.runner.OrderPageTest"/>
+      </classes>
+  </test>
+      <test thread-count="5" parallel="classes" name="about page test">
+    <classes>
+      <class name="com.runner.AboutPageTest"/>
+      </classes>
+  </test>
+      <test thread-count="5" parallel="classes" name="whishlist page test">
+    <classes>
+      <class name="com.runner.WishlistTest"/>
+      </classes>
+  </test>
+      <test thread-count="5" parallel="classes" name="index page test">
+    <classes>
+      <class name="com.runner.indexPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

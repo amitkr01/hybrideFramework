@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="com.runner.CartcheckTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="teardown"/>
+          <include name="beforsuite"/>
+          <include name="startTest"/>
+          <include name="basePageNavigation"/>
+        </methods>
+      </class> <!-- com.runner.CartcheckTest -->
+      <class name="com.runner.OrderPageTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="teardown"/>
+          <include name="beforsuite"/>
+          <include name="startTest"/>
+          <include name="basePageNavigation"/>
+        </methods>
+      </class> <!-- com.runner.OrderPageTest -->
+      <class name="com.runner.LoginPageTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="teardown"/>
+          <include name="beforsuite"/>
+          <include name="startTest"/>
+          <include name="basePageNavigation"/>
+        </methods>
+      </class> <!-- com.runner.LoginPageTest -->
+      <class name="com.runner.SearchPageTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="beforsuite"/>
+          <include name="basePageNavigation"/>
+          <include name="startTest"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.runner.SearchPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
