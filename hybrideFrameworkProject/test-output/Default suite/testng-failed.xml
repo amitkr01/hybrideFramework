@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.runner.AboutPageTest">
+      <class name="com.runner.OrderPageTest">
         <methods>
+          <include name="afterSuite"/>
+          <include name="beforsuite"/>
           <include name="teardown"/>
           <include name="startTest"/>
           <include name="basePageNavigation"/>
         </methods>
-      </class> <!-- com.runner.AboutPageTest -->
+      </class> <!-- com.runner.OrderPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

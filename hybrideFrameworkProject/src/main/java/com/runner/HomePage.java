@@ -32,7 +32,7 @@ public class HomePage extends Base {
 	@AfterTest
 	public void teardown()
 	{
-		driver.close();
+		//driver.close();
 		driver=null;
 	}
 }

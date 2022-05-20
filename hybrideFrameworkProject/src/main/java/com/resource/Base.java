@@ -28,12 +28,12 @@ public class Base {
 	public Properties prop;
 	public static ExtentReports extent;
 	public static ExtentTest test;
-//	@BeforeSuite
-//	public void beforsuite(){
-//		extent = new ExtentReports("D://MyExtentReport.html" , true);
-//		extent .loadConfig(new File("C:\\Users\\mindsdet153\\eclipse-workspace\\hybrideFrameworkProject\\src\\main\\java\\com\\resource\\Extent-config.xml"));
-//	}
-//	
+	@BeforeSuite
+	public void beforsuite(){
+		extent = new ExtentReports("D://MyExtentReport.html" , true);
+		extent .loadConfig(new File("C:\\Users\\mindsdet153\\eclipse-workspace\\hybrideFrameworkProject\\src\\main\\java\\com\\resource\\Extent-config.xml"));
+	}
+	
 	@BeforeClass
 	public static void startTest()
 	{
@@ -46,7 +46,7 @@ public class Base {
 	public WebDriver  initializeDriver() throws IOException 
 	{
 		prop = new Properties();
-		FileInputStream fis = new FileInputStream("C:\\Users\\mindsdet153\\eclipse-workspace\\hybrideFrameworkProject\\src\\main\\java\\com\\resource\\data.properties");
+		FileInputStream fis = new FileInputStream("C:\\Users\\mindsdet153\\git\\hybrideFramework\\hybrideFrameworkProject\\src\\main\\java\\com\\resource\\data.properties");
 		
 		
 		prop.load(fis);
@@ -55,7 +55,7 @@ public class Base {
 		
 		if(browserName.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver" , "chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver" , "C:\\Users\\mindsdet153\\git\\hybrideFramework\\hybrideFrameworkProject\\driver\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		else if(browserName.equals("firefox"))
@@ -70,19 +70,19 @@ public class Base {
 		return driver;
 		
 	}
-//	@AfterSuite
-//	public void afterSuite()
-//	{
-//		extent.flush();
-//		extent.close();
-//	}
+	@AfterSuite
+	public void afterSuite()
+	{
+		extent.flush();
+		extent.close();
+	}
 	
-//	public void getScreenshot(String result) throws IOException
-//	{
-//		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//		FileUtils.copyFile(src, new File("" + result + "screenshot.png"));
-//				
-//	}
+	public void getScreenshot(String result) throws IOException
+	{
+		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(src, new File("" + result + "screenshot.png"));
+				
+	}
 	
 
 }
