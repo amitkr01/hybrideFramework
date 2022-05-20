@@ -6,13 +6,11 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import com.resource.Base;
-
 public class Listeners implements ITestListener {
 	Base b = new Base();
 	@Override
 	public void onTestStart(ITestResult result) {
-		// TODO Auto-generated method stub
+	
 		
 	}
 
@@ -25,12 +23,12 @@ public class Listeners implements ITestListener {
 	@Override
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
-		
-		try {
-			b.getScreenshot(result.getName());
-		}catch(IOException e) {
-			e.printStackTrace();
-		}
+//		
+//		try {
+//			b.getScreenshot(result.getName());
+//		}catch(IOException e) {
+//			e.printStackTrace();
+//		}
 	}
 
 	@Override
@@ -59,7 +57,6 @@ public class Listeners implements ITestListener {
 
 	@Override
 	public void onFinish(ITestContext context) {
-		// TODO Auto-generated method stub
 	
 	}
 

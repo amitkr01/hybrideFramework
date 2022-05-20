@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  order page test</title>
+<title>TestNG:  login test</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>order page test</h2><table border='1' align="center">
+<h2 align='center'>login test</h2><table border='1' align="center">
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu May 19 21:02:42 IST 2022</td>
+<td>Started on:</td><td>Thu May 19 21:02:41 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (34 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (366 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,12 +75,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.runner.OrderPageTest.teardown()'><b>teardown</b><br>Test class: com.runner.OrderPageTest</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because &quot;com.runner.OrderPageTest.driver&quot; is null
-	at com.runner.OrderPageTest.teardown(OrderPageTest.java:47)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace478139423", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace478139423'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because &quot;com.runner.OrderPageTest.driver&quot; is null
-	at com.runner.OrderPageTest.teardown(OrderPageTest.java:47)
+<td title='com.runner.LoginPageTest.teardown()'><b>teardown</b><br>Test class: com.runner.LoginPageTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because &quot;com.runner.LoginPageTest.driver&quot; is null
+	at com.runner.LoginPageTest.teardown(LoginPageTest.java:39)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1645624121", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1645624121'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because &quot;com.runner.LoginPageTest.driver&quot; is null
+	at com.runner.LoginPageTest.teardown(LoginPageTest.java:39)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -107,7 +107,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.runner.OrderPageTest@3c989952</td></tr>
+<td>com.runner.LoginPageTest@52d239ba</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
@@ -117,25 +117,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.runner.OrderPageTest.basePageNavigation()'><b>basePageNavigation</b><br>Test class: com.runner.OrderPageTest</td>
+<td title='com.runner.LoginPageTest.basePageNavigation()'><b>basePageNavigation</b><br>Test class: com.runner.LoginPageTest</td>
 <td><div><pre>java.io.FileNotFoundException: C:\Users\mindsdet153\eclipse-workspace\hybrideFrameworkProject\src\main\java\com\resource\data.properties (The system cannot find the path specified)
 	at java.base/java.io.FileInputStream.open0(Native Method)
 	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
 	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
 	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
 	at com.resource.Base.initializeDriver(Base.java:49)
-	at com.runner.OrderPageTest.basePageNavigation(OrderPageTest.java:22)
+	at com.runner.LoginPageTest.basePageNavigation(LoginPageTest.java:19)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace750697757", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace750697757'><pre>java.io.FileNotFoundException: C:\Users\mindsdet153\eclipse-workspace\hybrideFrameworkProject\src\main\java\com\resource\data.properties (The system cannot find the path specified)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2062722626", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2062722626'><pre>java.io.FileNotFoundException: C:\Users\mindsdet153\eclipse-workspace\hybrideFrameworkProject\src\main\java\com\resource\data.properties (The system cannot find the path specified)
 	at java.base/java.io.FileInputStream.open0(Native Method)
 	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
 	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:157)
 	at java.base/java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:111)
 	at com.resource.Base.initializeDriver(Base.java:49)
-	at com.runner.OrderPageTest.basePageNavigation(OrderPageTest.java:22)
+	at com.runner.LoginPageTest.basePageNavigation(LoginPageTest.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -153,7 +153,7 @@ function toggleAllBoxes() {
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
 <td>0</td>
-<td>com.runner.OrderPageTest@3c989952</td></tr>
+<td>com.runner.LoginPageTest@52d239ba</td></tr>
 </table><p>
 </body>
 </html>

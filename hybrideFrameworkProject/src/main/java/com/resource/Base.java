@@ -28,12 +28,12 @@ public class Base {
 	public Properties prop;
 	public static ExtentReports extent;
 	public static ExtentTest test;
-	@BeforeSuite
-	public void beforsuite(){
-		extent = new ExtentReports("D://MyExtentReport.html" , true);
-		extent .loadConfig(new File("C:\\Users\\mindsdet153\\eclipse-workspace\\hybrideFrameworkProject\\src\\main\\java\\com\\resource\\Extent-config.xml"));
-	}
-	
+//	@BeforeSuite
+//	public void beforsuite(){
+//		extent = new ExtentReports("D://MyExtentReport.html" , true);
+//		extent .loadConfig(new File("C:\\Users\\mindsdet153\\eclipse-workspace\\hybrideFrameworkProject\\src\\main\\java\\com\\resource\\Extent-config.xml"));
+//	}
+//	
 	@BeforeClass
 	public static void startTest()
 	{
@@ -67,24 +67,22 @@ public class Base {
 		driver.manage().window().maximize();
 		log.info("maximize the window");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		//driver.quit();
-		
 		return driver;
 		
 	}
-	@AfterSuite
-	public void afterSuite()
-	{
-		extent.flush();
-		extent.close();
-	}
+//	@AfterSuite
+//	public void afterSuite()
+//	{
+//		extent.flush();
+//		extent.close();
+//	}
 	
-	public void getScreenshot(String result) throws IOException
-	{
-		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("" + result + "screenshot.png"));
-				
-	}
+//	public void getScreenshot(String result) throws IOException
+//	{
+//		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//		FileUtils.copyFile(src, new File("" + result + "screenshot.png"));
+//				
+//	}
 	
 
 }

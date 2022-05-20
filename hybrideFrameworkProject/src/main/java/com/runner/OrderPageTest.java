@@ -2,6 +2,7 @@ package com.runner;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.testng.annotations.AfterTest;
 
 import java.io.IOException;
