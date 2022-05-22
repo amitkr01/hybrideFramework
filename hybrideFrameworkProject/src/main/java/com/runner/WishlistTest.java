@@ -15,7 +15,7 @@ import com.resource.Base;
 public class WishlistTest extends Base {
 	public static Logger log = LogManager.getLogger(Base.class.getName());
 	@Test
-	public void basePageNavigation() throws IOException {
+	public void wishlistpage() throws IOException {
 		driver = initializeDriver();
 
 		driver.get(prop.getProperty("url"));

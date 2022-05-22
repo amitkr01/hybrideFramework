@@ -15,7 +15,7 @@ import com.resource.Base;
 public class SignUpPageTest extends Base {
 	public static Logger log = LogManager.getLogger(Base.class.getName());
 	@Test
-	public void basePageNavigation() throws IOException
+	public void Signuppage() throws IOException
 	{
 		driver = initializeDriver();
 		
@@ -37,7 +37,7 @@ public class SignUpPageTest extends Base {
 	@AfterTest
 	public void teardown()
 	{
-		driver.quit();
+		driver.close();
 		driver=null;
 	}
 }

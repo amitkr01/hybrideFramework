@@ -17,7 +17,7 @@ import com.resource.Base;
 public class indexPageTest extends Base {
 	public static Logger log = LogManager.getLogger(Base.class.getName());
 	@Test
-	public void basePageNavigation() throws IOException
+	public void indexpage() throws IOException
 	{
 		driver = initializeDriver();
 		
@@ -32,7 +32,8 @@ public class indexPageTest extends Base {
 	public void teardown()
 	{
 		driver.close();
-		driver=null;
+		driver = null;
+		
 	}
 
 }

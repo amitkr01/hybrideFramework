@@ -17,7 +17,7 @@ import com.resource.Base;
 public class OrderPageTest extends Base {
 	public static Logger log = LogManager.getLogger(Base.class.getName());
 	@Test
-	public void basePageNavigation() throws IOException
+	public void orderpage() throws IOException
 	{
 		driver = initializeDriver();
 		driver.get(prop.getProperty("url"));

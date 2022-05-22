@@ -14,7 +14,7 @@ import com.resource.Base;
 public class LoginPageTest extends Base {
 	public static Logger log = LogManager.getLogger(Base.class.getName());
 	@Test
-	public void basePageNavigation() throws IOException
+	public void loginpage() throws IOException
 	{
 		driver = initializeDriver();
 		

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="classes" name="Suite">
-<!-- <listeners>
+ <listeners>
 		<listener class-name="com.resource.Listeners"></listener>
-	</listeners>-->
+		<listener class-name="com.resource.ExtentReporterNG"></listener>
+	</listeners>
   <test thread-count="5" parallel="classes" name="login test">
     <classes>
       <class name="com.runner.LoginPageTest"/>
@@ -44,5 +45,19 @@
     <classes>
       <class name="com.runner.indexPageTest"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test> 
+
+      <test thread-count="5" parallel="classes" name="Signup page test">
+      
+    <classes>
+      <class name="com.runner.SignUpPageTest"/>
+    </classes>
+  </test> 
+
+      <test thread-count="5" parallel="classes" name="help page test">
+      
+    <classes>
+      <class name="com.runner.HelpPageTest"/>
+    </classes>
+  </test> 
+</suite> 

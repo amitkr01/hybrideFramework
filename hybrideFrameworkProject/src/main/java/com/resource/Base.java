@@ -12,36 +12,12 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
-import org.testng.log4testng.Logger;
-
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-
-
 
 public class Base {
 	
 	public static WebDriver driver;
 	public Properties prop;
-	public static ExtentReports extent;
-	public static ExtentTest test;
-	@BeforeSuite
-	public void beforsuite(){
-		extent = new ExtentReports("D://MyExtentReport.html" , true);
-		extent .loadConfig(new File("C:\\Users\\mindsdet153\\eclipse-workspace\\hybrideFrameworkProject\\src\\main\\java\\com\\resource\\Extent-config.xml"));
-	}
-	
-	@BeforeClass
-	public static void startTest()
-	{
-		extent = new ExtentReports(System.getProperty("user.dir")+"\\ExtentReportResult.html");
-		test = extent.startTest("ExtentReport");
-	}
-	
-	static Logger log = Logger.getLogger(Base.class);
+
 	
 	public WebDriver  initializeDriver() throws IOException 
 	{
@@ -65,16 +41,9 @@ public class Base {
 		}
 		
 		driver.manage().window().maximize();
-		log.info("maximize the window");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
 		
-	}
-	@AfterSuite
-	public void afterSuite()
-	{
-		extent.flush();
-		extent.close();
 	}
 	
 	public void getScreenshot(String result) throws IOException

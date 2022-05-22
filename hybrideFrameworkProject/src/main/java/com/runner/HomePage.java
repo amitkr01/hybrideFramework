@@ -16,7 +16,7 @@ public class HomePage extends Base {
 	public static Logger log = LogManager.getLogger(Base.class.getName());
 	
 	@Test
-	public void initialize() throws IOException
+	public void HomePage() throws IOException
 	{
 		driver= initializeDriver();
 		driver.get(prop.getProperty("url"));
@@ -32,7 +32,7 @@ public class HomePage extends Base {
 	@AfterTest
 	public void teardown()
 	{
-		//driver.close();
+		driver.close();
 		driver=null;
 	}
 }

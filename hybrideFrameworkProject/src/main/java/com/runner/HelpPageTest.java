@@ -19,7 +19,7 @@ public class HelpPageTest extends Base {
 	public static Logger log = LogManager.getLogger(Base.class.getName());
 	@Test
 	
-	public void basePageNavigation() throws IOException {
+	public void helpPage() throws IOException {
 		driver = initializeDriver();
 		log.info("driver is initialized");
 		driver.get(prop.getProperty("url"));
@@ -39,6 +39,7 @@ public class HelpPageTest extends Base {
 	public void teardown() {
 		driver.close();
 		driver = null;
+		
 	}
 
 }

@@ -5,7 +5,9 @@
     <classes>
       <class name="com.runner.LoginPageTest">
         <methods>
+          <include name="afterSuite"/>
           <include name="teardown"/>
+          <include name="beforsuite"/>
           <include name="startTest"/>
           <include name="basePageNavigation"/>
         </methods>
