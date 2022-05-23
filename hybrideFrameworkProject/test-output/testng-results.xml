@@ -1,149 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-23T00:21:15 IST" name="Suite" finished-at="2022-05-23T00:22:41 IST" duration-ms="85291">
+  <suite started-at="2022-05-23T13:44:23 IST" name="Default suite" finished-at="2022-05-23T13:44:42 IST" duration-ms="18917">
     <groups>
     </groups>
-    <test started-at="2022-05-23T00:21:15 IST" name="login test" finished-at="2022-05-23T00:21:24 IST" duration-ms="8284">
+    <test started-at="2022-05-23T13:44:23 IST" name="Default test" finished-at="2022-05-23T13:44:42 IST" duration-ms="18917">
       <class name="com.runner.LoginPageTest">
-        <test-method signature="loginpage()[pri:0, instance:com.runner.LoginPageTest@a8c1f44]" started-at="2022-05-23T00:21:15 IST" name="loginpage" finished-at="2022-05-23T00:21:23 IST" duration-ms="7994" status="PASS">
+        <test-method is-config="true" signature="loginpage()[pri:0, instance:com.runner.LoginPageTest@56cdfb3b]" started-at="2022-05-23T13:44:23 IST" name="loginpage" finished-at="2022-05-23T13:44:26 IST" duration-ms="2513" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginpage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.runner.LoginPageTest@a8c1f44]" started-at="2022-05-23T00:21:23 IST" name="teardown" finished-at="2022-05-23T00:21:24 IST" duration-ms="238" status="PASS">
+        <test-method signature="test1(java.lang.String,java.lang.String)[pri:0, instance:com.runner.LoginPageTest@56cdfb3b]" started-at="2022-05-23T13:44:26 IST" name="test1" data-provider="test1data" finished-at="2022-05-23T13:44:32 IST" duration-ms="5909" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Amitraj071201@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Amit@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test1(java.lang.String,java.lang.String)[pri:0, instance:com.runner.LoginPageTest@56cdfb3b]" started-at="2022-05-23T13:44:32 IST" name="test1" data-provider="test1data" finished-at="2022-05-23T13:44:38 IST" duration-ms="5326" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rohitkumar071201@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rohit@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.runner.LoginPageTest@56cdfb3b]" started-at="2022-05-23T13:44:38 IST" name="teardown" finished-at="2022-05-23T13:44:42 IST" duration-ms="4387" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.runner.LoginPageTest -->
-    </test> <!-- login test -->
-    <test started-at="2022-05-23T00:21:24 IST" name="cart test" finished-at="2022-05-23T00:21:27 IST" duration-ms="3702">
-      <class name="com.runner.CartcheckTest">
-        <test-method signature="Cartpage()[pri:0, instance:com.runner.CartcheckTest@5b64c4b7]" started-at="2022-05-23T00:21:24 IST" name="Cartpage" finished-at="2022-05-23T00:21:27 IST" duration-ms="3511" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Cartpage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.runner.CartcheckTest@5b64c4b7]" started-at="2022-05-23T00:21:27 IST" name="teardown" finished-at="2022-05-23T00:21:27 IST" duration-ms="179" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.runner.CartcheckTest -->
-    </test> <!-- cart test -->
-    <test started-at="2022-05-23T00:21:27 IST" name=" search  pagetest" finished-at="2022-05-23T00:21:36 IST" duration-ms="8750">
-      <class name="com.runner.SearchPageTest">
-        <test-method signature="searchpage()[pri:0, instance:com.runner.SearchPageTest@1252b961]" started-at="2022-05-23T00:21:27 IST" name="searchpage" finished-at="2022-05-23T00:21:32 IST" duration-ms="4567" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchpage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.runner.SearchPageTest@1252b961]" started-at="2022-05-23T00:21:32 IST" name="teardown" finished-at="2022-05-23T00:21:36 IST" duration-ms="4169" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.runner.SearchPageTest -->
-    </test> <!--  search  pagetest -->
-    <test started-at="2022-05-23T00:21:36 IST" name="order page test" finished-at="2022-05-23T00:21:49 IST" duration-ms="13052">
-      <class name="com.runner.OrderPageTest">
-        <test-method signature="orderpage()[pri:0, instance:com.runner.OrderPageTest@4d098f9b]" started-at="2022-05-23T00:21:36 IST" name="orderpage" finished-at="2022-05-23T00:21:49 IST" duration-ms="12871" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- orderpage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.runner.OrderPageTest@4d098f9b]" started-at="2022-05-23T00:21:49 IST" name="teardown" finished-at="2022-05-23T00:21:49 IST" duration-ms="138" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.runner.OrderPageTest -->
-    </test> <!-- order page test -->
-    <test started-at="2022-05-23T00:21:49 IST" name="home page test" finished-at="2022-05-23T00:21:56 IST" duration-ms="7286">
-      <class name="com.runner.HomePage">
-        <test-method signature="HomePage()[pri:0, instance:com.runner.HomePage@7b64240d]" started-at="2022-05-23T00:21:49 IST" name="HomePage" finished-at="2022-05-23T00:21:52 IST" duration-ms="2739" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HomePage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.runner.HomePage@7b64240d]" started-at="2022-05-23T00:21:52 IST" name="teardown" finished-at="2022-05-23T00:21:56 IST" duration-ms="4536" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.runner.HomePage -->
-    </test> <!-- home page test -->
-    <test started-at="2022-05-23T00:21:56 IST" name="about page test" finished-at="2022-05-23T00:22:05 IST" duration-ms="8139">
-      <class name="com.runner.AboutPageTest">
-        <test-method signature="aboutpage()[pri:0, instance:com.runner.AboutPageTest@65a4798f]" started-at="2022-05-23T00:21:56 IST" name="aboutpage" finished-at="2022-05-23T00:22:00 IST" duration-ms="3698" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aboutpage -->
-        <test-method is-config="true" signature="teardowntest()[pri:0, instance:com.runner.AboutPageTest@65a4798f]" started-at="2022-05-23T00:22:00 IST" name="teardowntest" finished-at="2022-05-23T00:22:05 IST" duration-ms="4432" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardowntest -->
-      </class> <!-- com.runner.AboutPageTest -->
-    </test> <!-- about page test -->
-    <test started-at="2022-05-23T00:22:05 IST" name="wishlist page test" finished-at="2022-05-23T00:22:14 IST" duration-ms="9062">
-      <class name="com.runner.WishlistTest">
-        <test-method signature="wishlistpage()[pri:0, instance:com.runner.WishlistTest@5b080f3a]" started-at="2022-05-23T00:22:05 IST" name="wishlistpage" finished-at="2022-05-23T00:22:09 IST" duration-ms="4890" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wishlistpage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.runner.WishlistTest@5b080f3a]" started-at="2022-05-23T00:22:09 IST" name="teardown" finished-at="2022-05-23T00:22:14 IST" duration-ms="4150" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.runner.WishlistTest -->
-    </test> <!-- wishlist page test -->
-    <test started-at="2022-05-23T00:22:14 IST" name="intex page test" finished-at="2022-05-23T00:22:21 IST" duration-ms="7145">
-      <class name="com.runner.indexPageTest">
-        <test-method signature="indexpage()[pri:0, instance:com.runner.indexPageTest@6c8bca63]" started-at="2022-05-23T00:22:14 IST" name="indexpage" finished-at="2022-05-23T00:22:16 IST" duration-ms="2853" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- indexpage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.runner.indexPageTest@6c8bca63]" started-at="2022-05-23T00:22:17 IST" name="teardown" finished-at="2022-05-23T00:22:21 IST" duration-ms="4283" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.runner.indexPageTest -->
-    </test> <!-- intex page test -->
-    <test started-at="2022-05-23T00:22:21 IST" name="Signup page test" finished-at="2022-05-23T00:22:32 IST" duration-ms="11223">
-      <class name="com.runner.SignUpPageTest">
-        <test-method signature="Signuppage()[pri:0, instance:com.runner.SignUpPageTest@1c55f277]" started-at="2022-05-23T00:22:21 IST" name="Signuppage" finished-at="2022-05-23T00:22:28 IST" duration-ms="6922" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Signuppage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.runner.SignUpPageTest@1c55f277]" started-at="2022-05-23T00:22:28 IST" name="teardown" finished-at="2022-05-23T00:22:32 IST" duration-ms="4280" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.runner.SignUpPageTest -->
-    </test> <!-- Signup page test -->
-    <test started-at="2022-05-23T00:22:32 IST" name="help page test" finished-at="2022-05-23T00:22:41 IST" duration-ms="8575">
-      <class name="com.runner.HelpPageTest">
-        <test-method signature="helpPage()[pri:0, instance:com.runner.HelpPageTest@376a312c]" started-at="2022-05-23T00:22:32 IST" name="helpPage" finished-at="2022-05-23T00:22:36 IST" duration-ms="4311" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- helpPage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.runner.HelpPageTest@376a312c]" started-at="2022-05-23T00:22:36 IST" name="teardown" finished-at="2022-05-23T00:22:41 IST" duration-ms="4259" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.runner.HelpPageTest -->
-      <class name="com.runner.AboutPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.runner.AboutPageTest@65a4798f]" started-at="2022-05-23T00:21:15 IST" name="setup" finished-at="2022-05-23T00:21:15 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.runner.AboutPageTest@65a4798f]" started-at="2022-05-23T00:22:41 IST" name="tearDown" finished-at="2022-05-23T00:22:41 IST" duration-ms="162" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.runner.AboutPageTest -->
-      <class name="com.runner.CartcheckTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.runner.CartcheckTest@5b64c4b7]" started-at="2022-05-23T00:21:15 IST" name="setup" finished-at="2022-05-23T00:21:15 IST" duration-ms="197" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.runner.CartcheckTest@5b64c4b7]" started-at="2022-05-23T00:22:41 IST" name="tearDown" finished-at="2022-05-23T00:22:41 IST" duration-ms="449" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.runner.CartcheckTest -->
-    </test> <!-- help page test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
