@@ -54,3 +54,15 @@
 [INFO ] 2022-05-23 00:22:00.427 [TestNG-test=about page test-1] AboutPageTest - open the about page
 [INFO ] 2022-05-23 00:22:00.613 [TestNG-test=about page test-1] AboutPageTest - compare the page title
 [INFO ] 2022-05-23 00:22:00.631 [TestNG-test=about page test-1] AboutPageTest - print the page title in console
+[INFO ] 2022-05-23 11:39:27.292 [TestNG-test=about page test-1] AboutPageTest - driver is initialized
+[INFO ] 2022-05-23 11:39:29.440 [TestNG-test=about page test-1] AboutPageTest - open the about page
+[INFO ] 2022-05-23 11:39:29.613 [TestNG-test=about page test-1] AboutPageTest - compare the page title
+[INFO ] 2022-05-23 11:39:29.642 [TestNG-test=about page test-1] AboutPageTest - print the page title in console
+[INFO ] 2022-05-23 11:41:26.383 [TestNG-test=about page test-1] AboutPageTest - driver is initialized
+[INFO ] 2022-05-23 11:41:28.400 [TestNG-test=about page test-1] AboutPageTest - open the about page
+[INFO ] 2022-05-23 11:41:28.553 [TestNG-test=about page test-1] AboutPageTest - compare the page title
+[INFO ] 2022-05-23 11:41:28.627 [TestNG-test=about page test-1] AboutPageTest - print the page title in console
+[INFO ] 2022-05-23 11:55:34.452 [TestNG-test=about page test-1] AboutPageTest - driver is initialized
+[INFO ] 2022-05-23 11:55:37.012 [TestNG-test=about page test-1] AboutPageTest - open the about page
+[INFO ] 2022-05-23 11:55:37.109 [TestNG-test=about page test-1] AboutPageTest - compare the page title
+[INFO ] 2022-05-23 11:55:37.145 [TestNG-test=about page test-1] AboutPageTest - print the page title in console
